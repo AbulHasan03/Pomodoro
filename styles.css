@@ -1,13 +1,5 @@
-body {
-  text-align: center;
-}
-
-#page-header {
-  font-size: 36px;
-  margin-top: 20px;
-}
-
 .timer {
+  text-align: center;
   margin-top: 50px;
 }
 
@@ -24,12 +16,35 @@ button {
   cursor: pointer;
 }
 
-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+
+@media (max-width: 600px) {
+  .timer {
+    margin-top: 20px;
+  }
+
+  #timer-display {
+    font-size: 36px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 0 5px;
+  }
 }
 
-#work-time {
-  font-size: 24px;
-  color: #333; 
+@media (min-width: 1200px) {
+  .timer {
+    margin-top: 100px;
+  }
+
+  #timer-display {
+    font-size: 64px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 12px 24px;
+    margin: 0 15px;
+  }
 }
