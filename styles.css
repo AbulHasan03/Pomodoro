@@ -16,8 +16,7 @@ button {
   cursor: pointer;
 }
 
-
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .timer {
     margin-top: 20px;
   }
@@ -30,21 +29,5 @@ button {
     font-size: 14px;
     padding: 8px 16px;
     margin: 0 5px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .timer {
-    margin-top: 100px;
-  }
-
-  #timer-display {
-    font-size: 64px;
-  }
-
-  button {
-    font-size: 18px;
-    padding: 12px 24px;
-    margin: 0 15px;
   }
 }
